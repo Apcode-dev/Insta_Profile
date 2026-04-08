@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Akash Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+min-height:100vh;
+background:linear-gradient(180deg,#5f6af5,#8f44fd);
+display:flex;
+justify-content:center;
+}
+
+.mobile-container{
+width:100%;
+max-width:420px;
+min-height:100vh;
+padding:25px 18px 40px;
+}
+
+.profile-section{
+text-align:center;
+margin-top:30px;
+margin-bottom:30px;
+}
+
+.profile-section img{
+width:110px;
+height:110px;
+border-radius:50%;
+border:4px solid white;
+box-shadow:0 10px 25px rgba(0,0,0,0.25);
+object-fit:cover;
+}
+
+.name{
+color:white;
+font-size:22px;
+font-weight:600;
+margin-top:12px;
+}
+
+.bio{
+color:#e8e8e8;
+font-size:13px;
+margin-top:4px;
+}
+
+.links{
+display:flex;
+flex-direction:column;
+gap:14px;
+}
+
+.link-box{
+background:white;
+padding:16px;
+border-radius:16px;
+text-align:center;
+font-weight:500;
+text-decoration:none;
+color:#333;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+transition:.25s ease;
+position:relative;
+overflow:hidden;
+}
+
+.link-box:hover{
+transform:translateY(-4px);
+}
+
+.link-box:active{
+transform:scale(.98);
+}
+
+.instagram{
+background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
+color:white;
+}
+
+.linkedin{
+background:linear-gradient(45deg,#0077b5,#00a0dc);
+color:white;
+}
+
+.github{
+background:linear-gradient(45deg,#2b3137,#24292e);
+color:white;
+}
+
+.youtube{
+background:linear-gradient(45deg,#ff0000,#ff4d4d);
+color:white;
+}
+
+.portfolio{
+background:linear-gradient(45deg,#00c6ff,#0072ff);
+color:white;
+}
+
+.footer{
+text-align:center;
+margin-top:25px;
+color:white;
+font-size:12px;
+opacity:.9;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="mobile-container">
+
+<div class="profile-section">
+<img src="./Profile_p.jpeg">
+<div class="name">Akash Prajapati</div>
+<div class="bio">Video & Photo Editor • Web Developer</div>
+</div>
+
+<div class="links">
+
+<a href="https://www.instagram.com/ap.code.in/" class="link-box instagram">
+Instagram
+</a>
+
+<a href="https://www.linkedin.com/in/akash-s-prajapati-76238931a/" class="link-box linkedin">
+LinkedIn
+</a>
+
+<a href="#" class="link-box github">
+GitHub
+</a>
+
+<a href="#" class="link-box youtube">
+YouTube
+</a>
+
+<a href="https://apcode-dev.github.io/Portfolio01/" class="link-box portfolio">
+My Portfolio
+</a>
+
+</div>
+
+<div class="footer">
+Made with ❤ by Akash
+</div>
+
+</div>
+
+<script>
+
+const boxes = document.querySelectorAll('.link-box');
+
+boxes.forEach(box => {
+box.addEventListener('touchstart', () => {
+box.style.opacity = "0.9";
+});
+
+box.addEventListener('touchend', () => {
+box.style.opacity = "1";
+});
+});
+
+</script>
+
+</body>
+</html>
